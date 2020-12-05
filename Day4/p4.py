@@ -1,6 +1,6 @@
 import re
 
-#Problem 3 solution (part 1)
+#Problem 4 solution (part 1)
 #Checks if a passport is valid or not
 def isValid(passport):
     passPortNeededFields = ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
@@ -35,7 +35,7 @@ def p4(fileName):
     validPassPorts = [p for p in loadPassports(fileName) if isValid(p)]
     return len(validPassPorts), validPassPorts
 
-#Problem 3 solution (part 2)
+#Problem 4 solution (part 2)
 def isNowValid(passPort):
     for field in passPort.split(' '):
         name = field.split(':')[0]
